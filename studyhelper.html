@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcard Quiz App</title>
+  <link rel="stylesheet" href="studyhelper.css">
+</head>
+<body>
+  <header>
+    <h1>Flashcard Quiz App</h1>
+  </header>
+
+  <!-- Flashcard Creator -->
+  <section id="creator">
+    <h2>Flashcard Creator</h2>
+    <label for="question">Question:</label>
+    <input type="text" id="question" placeholder="Enter question">
+    
+    <label for="answer">Answer:</label>
+    <input type="text" id="answer" placeholder="Enter answer">
+    
+    <button id="addFlashcard">Add Flashcard</button>
+  </section>
+
+  <!-- Flashcard List -->
+  <section id="list">
+    <h2>Flashcard List</h2>
+    <ul id="flashcardList"></ul>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz">
+    <h2>Quiz Section</h2>
+    <button id="startQuiz">Start Quiz</button>
+    <div id="quizArea">
+      <p id="quizQuestion">Question will appear here…</p>
+      <label for="userAnswer">Your Answer:</label>
+      <input type="text" id="userAnswer" placeholder="Type your answer">
+      <button id="submitAnswer">Submit Answer</button>
+      <button id="nextQuestion">Next Question</button>
+    </div>
+    <p id="feedback"></p>
+  </section>
+
+  <script src="studyhelper.js"></script>
+</body>
+</html>
